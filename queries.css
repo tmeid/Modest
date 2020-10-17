@@ -1,0 +1,420 @@
+/*==========================
+*   List of break-point  
+*   1. 960px 
+*   2. 850px 
+*   3. 768px
+*   4. 560px
+*   5. 425px
+*==========================*/
+@media screen and (max-width: 960px){
+    /* hero */
+    .hero-text{
+        padding-top: 222px;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 80%;
+        position: static;
+        top: initial;
+        transform: none;
+    }
+    .hero .container ul {
+        display: flex;
+        position: static;
+        justify-content: center;
+        margin-top: 100px;
+    }
+    /* about */
+    .wrap .intro,
+    .wrap .snippet {
+        width: calc((100% - 30px) / 2);
+    }
+    /*form*/
+    form > .form-info {
+        display: block;
+        margin-bottom: 15px;
+    }
+    form > .form-info > div{
+        width: 100%;
+
+    }
+    form > .form-info > div:first-child{
+        margin-bottom: 15px;
+    }
+}
+@media screen and (max-width: 850px){
+    header{
+        height: auto;
+        padding-bottom: 5px;
+    }
+    header .container {
+        display: block;
+    }
+    header .container h1 {
+        line-height: 42px;
+        display: block;
+        text-align: center;
+    }
+    header .container ul {
+        justify-content: center;
+    }
+    header .container ul li a {
+        height: 25px;
+        margin-bottom: 4px;
+        line-height: 21px;
+    }
+    @media screen and (max-width: 768px){
+        #about, #team, #work, #do, #features, #contact {
+            padding-top: 30px;
+        }
+        #about {
+            padding-bottom: 30px;
+        }
+        h2 {
+            margin-bottom: 30px;
+        }
+        header {
+            position: static;
+        }
+        .hero {
+            height: 500px;
+        }
+        .hero-text {
+            padding-top: 100px;
+        }
+        .wrap {
+            display: block;
+        }
+        .wrap .intro, .wrap .snippet {
+            width: 100%;
+        }
+        .wrap .intro{
+            margin-bottom: 25px;
+        }
+        .wrap .intro p:first-child,
+        .wrap .intro p:nth-child(2) {
+            margin-bottom: 10px;
+        }
+        .snippet ol li {
+            margin-bottom: 15px;
+        }
+        /* team */
+        .wrap-team {
+            flex-wrap: wrap;
+        }
+        .team-mini {
+            width: calc((100% - 10px) / 2);
+            margin-bottom: 10px;
+        }
+        .team-mini img {
+            width: 100%;
+        }
+        #team .container {
+            padding-bottom: 30px;
+        }
+        .mask{
+            display: block;
+            background-color: transparent;
+        }
+        .mask ul {
+            position: absolute;
+            display: block;
+            top: 0;
+            left: initial;
+            transform: initial;
+            right: 0;
+        }
+        .mask ul li {
+            display: block;
+        }
+        .mask ul li:nth-child(3) {
+            margin: 0 0 1px;
+        }
+        .mask ul li:nth-child(1) button {
+            display: block;
+            transition: all 0.6s;
+        }
+        .mask > ul > li {
+            margin-bottom: 1px;
+        }
+            /* transform */
+        .mask > ul > li:nth-child(4) > a {
+            transform: translateY(-153px);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.2s;
+        }
+        .mask > ul > li:nth-child(3) > a {
+            transform: translateY(-102px);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.2s;
+        }
+        .mask > ul > li:nth-child(2) > a {
+            opacity: 0;
+            transform: translateY(-51px);
+            visibility: hidden;
+            transition: all 0.6s;
+        }
+        .mask ul > li:nth-child(1):active ~ li:nth-child(4) > a,
+        .mask ul > li:nth-child(1):hover ~ li:nth-child(4) > a{
+            transform: translateY(0);
+            opacity: 1;
+            visibility: visible;
+            transition-delay: 0;
+            
+        }
+        .mask ul > li:nth-child(1):active ~ li:nth-child(3) > a,
+        .mask ul > li:nth-child(1):hover ~ li:nth-child(3) > a{
+            transform: translateY(0);
+            opacity: 1;
+            visibility: visible;
+            transition-delay: 0.2s;
+        }
+        .mask ul > li:nth-child(1):active ~ li:nth-child(2) > a,
+        .mask ul > li:nth-child(1):hover ~ li:nth-child(2) > a{
+            transform: translateY(0);
+            opacity: 1;
+            visibility: visible;
+            transition-delay: 0.3s;
+        }
+        .mask ul > li:nth-child(1):active > button,
+        .mask ul > li:nth-child(1):hover > button{
+            background-color: #3a454d;
+            transition-delay: 0.3s;
+        }
+        
+        
+        /* work */
+        #work {
+            padding-bottom: 30px;
+        }
+        .wrap-work > div {
+            width: calc((100% - 10px) / 2);
+            margin-bottom: 10px;
+        }
+        #work .btn{
+            margin-top: 10px;
+        }
+        .wrap-work > div> div {
+            display: block;
+        }
+        .wrap-work > div > div > a {
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+        /* do */
+        #do ul li {
+            width: calc((100% - 10px) / 2);
+            margin-bottom: 20px;
+        }
+        #do {
+            padding-bottom: 30px;
+        }
+        /* features */
+        #features {
+            padding-bottom: 30px;
+        }
+        .wrap-features {
+            flex-wrap: wrap;
+           
+
+        }
+        .feature {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .feature img{
+            margin-right: 10px;
+            margin-bottom: 20px;
+        }
+        .feature h4 {
+            line-height: 25px;
+            margin-bottom: 10px;
+        }
+        .feature p{
+            line-height: 20px;
+        }
+        /* contact */
+        #contact .all {
+            display: block;
+            position: initial;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        .contact-info p {
+            margin-bottom: 10px;
+        }
+        .contact-info h4 {
+            margin-bottom: 15px;
+        }
+        .contact-info {
+            width: 100%;
+        }
+        #contact .container form {
+            position: initial;
+            padding: 0;
+            width: 100%;
+            display: block;
+        }
+        #contact .btn{
+            margin-top: 10px;
+        }
+        
+    }
+    @media screen and (max-width: 560px){
+        
+        /* hero */
+        .hero .container ul {
+            margin-top: 70px;
+        }
+        .hero-text {
+            max-width: 100%;
+            text-align: center;
+        }
+        /* about */
+        .wrap .intro p:first-child, .wrap .intro p:nth-child(2) {
+           font-size: 14px;
+           text-align: justify;
+        }
+        .snippet p {
+            text-align: justify;
+            font-size: 14px;
+            line-height: 26px;
+        }
+        /* team */
+        .mask ul li a,
+        .mask ul li button {
+            width: 30px;
+            height: 30px;
+        }
+        /* do */
+        #do ul li p {
+            font-size: 14px;
+        }
+        /* feature */
+        #features {
+            padding-bottom: 0;
+        }
+        .feature{
+            display: block;
+            text-align: center;
+            margin-bottom: 24px;
+        }
+        .feature img {
+            margin-right: 0;
+            margin-bottom: 5px;
+            display: inline-block;
+        }
+        .feature h4 {
+            line-height: 25px;
+            margin-bottom: 0;
+        }
+        .feature p {
+            text-align: justify;
+            font-size: 14px;
+        }
+        /* about */
+        #about,
+        #do{
+            padding-bottom: 20px;
+        }
+        /* contact */
+        .contact-info p {
+            font-size: 14px;
+        }
+        /* footer */
+        footer .container{
+            display: block;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        footer .container p {
+            margin-bottom: 10px;
+            font-size: 14px;
+            text-align: center;
+        }
+        footer .container ul li:first-child {
+            margin-left: 0;
+        }
+        footer .container p, footer .container ul {
+            justify-content: center;
+        }
+    }
+    @media screen and (max-width: 425px){
+        /* hero */
+        h2{
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+        .hero {
+            height: 330px;
+        }
+        .hero > .container {
+            text-align: center;
+        }
+        .hero-text {
+            padding-top: 15px;
+        }
+        .hero p {
+            text-align: justify;
+            margin-bottom: 15px;
+        }
+        .hero h2 {
+            font-weight: normal;
+            color: #fff;
+            line-height: 42px;
+            margin-bottom: 10px;
+        }
+        .hero .container ul {
+            margin-top: 30px;
+        }
+        .btn-hero a {
+            height: 30px;
+            line-height: 26px;
+            font-size: 10px;
+        }
+        /* about */
+        .snippet ol li::before {
+            display: none;
+        }
+        .snippet ol li {
+            padding-left: 0;
+        }
+        
+        /* team */
+        .wrap-team {
+            justify-content: center;
+        }
+        .team-mini {
+            width: 70%;
+        }
+        /* work */
+        .wrap-work > div {
+            width: 100%;
+        }
+        .wrap-work > div img {
+            width: 100%;
+        }
+        /* do */
+        #do ul li {
+            width: 100%;
+        }
+        #do ul li p {
+            text-align: justify;
+        }
+        #do ul li::before {
+            margin-bottom: 15px;
+        }
+        #do ul li h4 {
+            margin-bottom: 10px;
+        }
+        /* contact */
+        .contact-info p {
+            text-align: justify;
+        }
+        form .btn button {
+            width: 100%;
+        }
+    }
+
+}

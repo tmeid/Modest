@@ -1,2 +1,2 @@
 # Modest
-![Design preview for Modest](./design/modest.jpg)
+![Design preview for Modest](./design/Modest.jpg)

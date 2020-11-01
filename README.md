@@ -1,2 +1,2 @@
 # Modest
-PSD to HTML
+![Design preview for Modest](./design/modest.jpg)
